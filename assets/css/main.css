@@ -44,14 +44,14 @@
     --heading-six: 0.9375rem;
   /* Font Size End */
   /* template main color */
-    --main-h: 219;
-    --main-s: 94%;
-    --main-l: 61%;
+    --main-h: 94;
+    --main-s: 46.2%;
+    --main-l: 48.8%;
     --main: var(--main-h) var(--main-s) var(--main-l);
   /* template main color */
-                --main-two-h: 166;
-                --main-two-s: 68%;
-                --main-two-l: 48%;
+                --main-two-h: 94;
+                --main-two-s: 46.2%;
+                --main-two-l: 48.8%;
                 --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
   /* White Color */
     --white: 0 0% 100%;
