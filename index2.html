@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healing Generations Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    .form-container {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      color: #333;
+    }
+    .checkbox-group {
+      margin: 10px 0;
+    }
+    label {
+      margin-left: 10px;
+    }
+    .form-footer {
+      margin-top: 20px;
+      text-align: center;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Healing Generations Form</h1>
+    <form action="/submit" method="POST">
+      <!-- User Info Section -->
+      <div class="checkbox-group">
+        <label for="grn">GRN:</label>
+        <input type="text" id="grn" name="grn" placeholder="Enter GRN">
+      </div>
+      <div class="checkbox-group">
+        <label for="child-name">Child Name:</label>
+        <input type="text" id="child-name" name="child_name" placeholder="Enter Child Name">
+      </div>
+      <div class="checkbox-group">
+        <label for="guardian-name">Guardian Name:</label>
+        <input type="text" id="guardian-name" name="guardian_name" placeholder="Enter Guardian Name">
+      </div>
+      <div class="checkbox-group">
+        <label for="guardian-contact">Guardian Contact:</label>
+        <input type="text" id="guardian-contact" name="guardian_contact" placeholder="Enter Guardian Contact">
+      </div>
+
+      <!-- Checkbox Categories -->
+      <!-- 1. Doesn't Pay Attention -->
+      <div class="section-title">Doesn’t Pay Attention or Can’t Sit Still</div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="focus" name="doesnt_pay_attention[]" value="focus">
+        <label for="focus">Has trouble focusing on an activity for an extended time</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="conversations" name="doesnt_pay_attention[]" value="conversations">
+        <label for="conversations">Has trouble keeping up in conversations</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="fidgets" name="doesnt_pay_attention[]" value="fidgets">
+        <label for="fidgets">Fidgets and fiddles with things</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="interrupts" name="doesnt_pay_attention[]" value="interrupts">
+        <label for="interrupts">Interrupts a lot or talks constantly</label>
+      </div>
+
+      <!-- 2. Is Angry or Has Meltdowns -->
+      <div class="section-title">Is Angry or Has Meltdowns</div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="frustrated" name="angry_or_meltdowns[]" value="frustrated">
+        <label for="frustrated">Gets frustrated quickly and gives up</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="upset" name="angry_or_meltdowns[]" value="upset">
+        <label for="upset">Gets unreasonably upset when something goes wrong</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="letting-go" name="angry_or_meltdowns[]" value="letting_go">
+        <label for="letting-go">Has trouble letting go of things that are upsetting</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="feels-hurt" name="angry_or_meltdowns[]" value="feels_hurt">
+        <label for="feels-hurt">Feels hurt, misunderstood, or picked on</label>
+      </div>
+
+      <!-- Add Other Sections Here -->
+      <!-- Example: Is Stressed or Anxious -->
+      <div class="section-title">Is Stressed or Anxious</div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="worries" name="stressed_or_anxious[]" value="worries">
+        <label for="worries">Worries too much or too long over minor things</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="cries" name="stressed_or_anxious[]" value="cries">
+        <label for="cries">Cries easily or seems overly sensitive</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="thinks-what-if" name="stressed_or_anxious[]" value="thinks_what_if">
+        <label for="thinks-what-if">Says and thinks "what if" often</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="complains" name="stressed_or_anxious[]" value="complains">
+        <label for="complains">Complains unexpectedly about not feeling well</label>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-footer">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
