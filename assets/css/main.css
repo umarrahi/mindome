@@ -33,8 +33,8 @@
   /* Font Family Variable */
     /* --heading-font: "Urbanist", sans-serif; */
     /* --heading-font: "Inter", sans-serif; */
-    --heading-font: "IBM Plex Sans", sans-serif;
-    --body-font: "IBM Plex Sans", sans-serif;
+    --heading-font: "IBM Plex Sans", serif;
+    --body-font: "IBM Plex Sans", serif;
     /* --body-font: "Inter", sans-serif; */
   /* Font Size Variable Start */
     --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 2.375rem);
